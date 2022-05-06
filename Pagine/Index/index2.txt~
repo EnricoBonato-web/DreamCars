@@ -1,0 +1,57 @@
+</div>
+</div>
+<div id="breadcrumb" >
+    Ti trovi in: Home
+</div>
+<label for="show-menu" class="show-menu">Menu</label>
+<input type="checkbox" id="show-menu" role="button">
+<div id="menu">
+    <ul>
+        <li id="active"><span xml:lang="en" tabindex="2">Home</span></li>
+        <a href="Pagine/Annunci/Nuove/nuove.php?page=1" ><li>Nuove</li> </a>
+        <a href="Pagine/Annunci/Usate/usate.php?page=1" ><li>Usate</li> </a>
+        <a href="Pagine/Info/info.php" ><li>Info</li> </a>
+        <a href="Pagine/AreaPersonale/TestDrive/testDrive.php"><li>Test Drive</li></a>
+        <a href="Pagine/ChiSiamo/chiSiamo.php"><li>Chi Siamo</li></a>
+    </ul>
+</div>
+<div  class="slideshow-container" >
+    <div class="slides fade">
+        <img src="img/autoslide8.jpg" />
+        <div class="numbertext">1 / 4</div>
+    </div>
+    <div class="slides nascosta" >
+        <img src="img/autoslide5.jpg" />
+        <div class="numbertext">2 / 4</div>
+    </div>
+    <div class="slides fade nascosta"> 
+        <img src="img/autoslide7.png" />
+        <div class="numbertext">3 / 4 </div>
+    </div>
+    <div  class="slides fade nascosta" >
+        <img src="img/autoslide4.jpg" />
+        <div class="numbertext">4 / 4 </div>
+    </div>
+    <a class="prev nascosta" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next nascosta" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div id="dot" class="nascosta">
+    <span  class="dot" onclick="currentSlide(1)"></span> 
+    <span  class="dot" onclick="currentSlide(2)"></span> 
+    <span  class="dot" onclick="currentSlide(3)"></span> 
+    <span  class="dot" onclick="currentSlide(4)"></span> 
+</div>
+<div id="contenuto" onClick="show()">
+    <h2>Benvenuti nel nostro sito.</h2>
+<p>Il gruppo <span xml:lang="en">DreamCars</span> garantisce la miglior qualit&agrave; a prezzi competitivi.</p>
+<p>Il nostro parco auto varia dal <b>nuovo <acronym title ="chilometro zero" >km0</acronym></b>, all&rsquo; <b>usato garantito</b>.</p>
+<p> <span xml:lang="en">DreamCars</span> inoltre offre assistenza qualificata a qualsiasi modello venduto dal Gruppo.</p>
+<p id='slogan'><span xml:lang="en">DreamCars</span> l&rsquo;automobile dei tuoi sogni, realt&agrave;</p>
+
+</div>
+
+<div id="ricerca">
+	<form id="ricercaAuto" method="POST" action="queryRicerca.php">
+		<select>
+

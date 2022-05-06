@@ -1,0 +1,232 @@
+@media screen and (max-width: 480px){ 
+
+    footer, .brand-container { 
+        display: none; 
+    } 
+    
+    .slideshow-container img { 
+        width: 100%; 
+    } 
+    
+    .next, .prev { 
+        margin-top: 0; 
+        border: solid 1px black; 
+        margin-left: auto !important; 
+        margin-right: auto !important; 
+        padding: 5px; 
+    } 
+    
+    #marca { 
+        font-size: 25px; 
+    } 
+    
+    #modello, #km, #prezzo { 
+        margin-left: auto; 
+        font-size: 20px; 
+    } 
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) { 
+footer { 
+    width: 100%; 
+    left: 0; 
+} 
+ 
+.slideshow-container img { 
+    width: auto; 
+} 
+ 
+.next, .prev { 
+    top: 250px; 
+    border: solid 1px black; 
+    margin-left: auto !important; 
+    margin-right: auto !important; 
+    padding: 5px; 
+} 
+    
+ .brand {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+} 
+
+@media screen and (max-width: 768px) { 
+    
+    #breadcrumb {
+        float: inherit;
+    }
+
+    .show-menu {
+		display:block;
+	}
+    
+    #menu {
+        padding-top: 0 !important;
+        width: 100%;
+        float: left;
+    }
+    
+    #menu ul {
+        width: 100%;
+    }
+    
+    #menu ul li{
+        width: 100%;
+        border-radius: 5px 5px 20px 20px;
+        border-bottom-color: black;
+        border-bottom-style: outset;
+        float: left;
+    }
+    
+    #menu ul li:hover {
+        width: 100% !important;
+    }
+    
+    #active {
+        width: 100% !important;
+    }
+    
+    body {
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+    
+    #header img, #menu { 
+        display: none;     
+    }
+    
+    .slideshow-container {
+        display: inherit;
+        width: 100%;
+        height: auto;
+    }
+    
+    .numbertext {
+        padding: inherit;
+    }
+    
+    .next {
+        right: 20px;
+    }
+    
+    .prev {
+        left: 20px;
+    }
+    
+    #dot {
+        float: left;
+        width: 100%;
+    }
+    
+    #header h1 {
+        padding-top: 20px !important;
+        padding-left: 0px;
+    }
+    
+    #login { 
+        width: 40%; 
+        margin-top: 3px; 
+        float: right; 
+    } 
+ 
+    #contenuto { 
+        width: 100%; 
+        float: left; 
+    }   
+    
+    #listino { 
+        float: left; 
+        width: auto; 
+    } 
+     
+    div.nuova { 
+        width: auto; 
+        margin: auto; 
+        float: left; 
+    } 
+    
+    .fotoNuove { 
+        height: 30%; 
+        width: 50%; 
+    } 
+ 
+    .button { 
+        font-size: 17px; 
+        width: 30%; 
+    } 
+    
+    #tabellaAuto img { 
+        width: 100%; 
+    } 
+    
+    #tabellaAuto table { 
+        width: 100%; 
+    } 
+    
+    #tabs { 
+        width: auto; 
+    } 
+    
+    #container { 
+        width: auto; 
+    } 
+    
+    .content { 
+     width: auto; 
+    }
+    
+    table {
+        text-align: left;
+    }
+    
+    th, td {
+        padding: 0px;
+    }
+    
+} 
+
+@media screen and (max-width: 1024px) {
+     #funzioniPag { 
+        width: 100%; 
+        float: left; 
+    }     
+ 
+    #listaFunz { 
+        width: 100%; 
+    } 
+ 
+    #funzioniPag li { 
+        width: 100%; 
+        float: left; 
+        padding-top: 0.5em; 
+        padding-bottom: 0.5em; 
+    }
+    
+    #funzioniPag li a { 
+        border-right: 0; 
+        border-bottom: 1px solid black; 
+        margin-left: 0; 
+        width: auto; 
+    } 
+    
+    #activedip { 
+        border-top-right-radius: 0 !important; 
+        border-top-left-radius: 0 !important; 
+    }
+    
+    .brand {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .ripa {
+        width: auto;
+        padding-left: 0px;
+    }
+    
+    .autoInRiparazione {
+        margin: 0px;
+    }
+    
+}

@@ -1,0 +1,9 @@
+<div id='tabellaAuto'><tr><td>Marca:</td></tr><tr><td>$row["marca"]</td></tr>
+	
+	
+	
+	
+	
+	
+	
+	</div>

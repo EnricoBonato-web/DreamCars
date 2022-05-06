@@ -1,0 +1,67 @@
+*{
+    background-color: none;
+    text-decoration: none;
+
+}
+
+html { 
+    font-family: "Times New Roman", Times, serif; 
+} 
+
+#menu, #breadcrumb, #login, footer, #header img, .brand-container {
+    display: none;
+}
+
+#header h1 {
+    width: 100%;
+    padding-left: 0px;
+}
+
+#contenuto, #listino { 
+    float: left; 
+    width: 100%; 
+} 
+
+/* home */
+.slideshow-container {
+    float: left;
+    padding-left: 50px; 
+    padding-top: 20px; 
+    width: 80%; 
+}
+
+.numbertext, .prev, .next, #dot, .dot {
+    display: none !important;
+}
+
+/* nuove e usate */
+.button {
+    display: none;
+}
+
+div.nuova {
+    float: left;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* area personale utenti e dipendenti */
+
+#funzioniPag, .ripa, #modifica, #inserimento, #formInserimento, #modifannunci {
+    display: none;
+}
+
+#datiAccount {
+    border: 0px;
+}
+
+.autoInRiparazione {
+    border: 0px;
+}
+
+/* login e registrati */
+#linkLog {
+    display: none;
+}
+

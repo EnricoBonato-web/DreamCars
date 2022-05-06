@@ -1,0 +1,41 @@
+<?php
+session_start();
+
+echo file_get_contents("../../Template/HeadBase.txt");
+if($_SESSION["user"]){
+    echo("Benvenuto, ".$_SESSION["nome"]." ");
+    echo("<a href='../LoginRegistrati/logout.php'>Logout</a>");
+}
+?>
+       </div>
+       <div id="breadcrumb">
+        Ti trovi in: <a href="../../index.php">Home</a> / Area Personale
+      </div>
+       
+      <label for="show-menu" class="show-menu">Menu</label>
+	  <input type="checkbox" id="show-menu" role="button">
+
+      <div id="menu">
+         <ul>
+            <a href="../../index.php"><span xml:lang="en" ><li>Home</li></span></a>
+            <a href="../../Pagine/Annunci/Nuove/nuove.php"><li>Nuove</li></a>
+            <a href="../../Pagine/Annunci/Usate/usate.php"><li>Usate</li></a>
+            <a href="../../Pagine/Info/info.php" ><li>Info</li></a>
+	        <a href="../../Pagine/AreaPersonale/TestDrive/testDrive.php" ><li>Test Drive</li></a>
+            <a href="../../Pagine/ChiSiamo/chiSiamo.php"><li>Chi Siamo</li></a>  
+	</ul>
+      </div>    
+
+    <div id="contenuto">       
+       <div id="funzioniPag">
+     <ul id ="listaFunz">
+     <li ><a href="../../Pagine/AreaPersonale/gestioneAccount.php">Gestisci il tuo account</a></li>
+     <li ><a href="../../Pagine/AreaPersonale/gestioneRiparazioni.php">Visualizza riparazioni</a> </li>
+     </ul>
+    </div>
+
+	<p>Benvenuto nella tua area personale!</p>
+	   </div>
+   <?php 
+    echo   file_get_contents("../../Template/Footer.txt");
+    ?>

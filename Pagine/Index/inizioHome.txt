@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+   <head>
+      <meta http-equiv="Content-type" content="txt/html; charset=utf-8" />
+      <title> DreamCars  </title>
+      <meta name="title" content="Concessionaria Dreamcars" />
+      <meta name="description" content="" />
+      <meta name="keyword" content="concessionaria, auto,vendita , assistenza, padova"/>
+      <link rel="shortcut icon" href="img/logo-min.jpg" />
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <link href="print.css" rel="stylesheet" type="text/css" media="print"> 
+       <script type="text/javascript"  src="javascript.js"></script>
+   </head>
+   <body onload="start()" >
+      <div id="header">
+         <img id ="logoDC2" src="img/logoDC2.png" />
+         <h1><span xml:lang="en">DreamCars</span></h1>
+         <div id="login" >

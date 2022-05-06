@@ -1,0 +1,24 @@
+</div>
+</div>
+
+<div id="breadcrumb">
+    Ti trovi in: <a href="../../../index.php" tabindex="2">Home</a> / Nuove
+</div>
+<label for="show-menu" class="show-menu">Menu</label>
+<input type="checkbox" id="show-menu" role="button">
+<div id="menu">
+    <ul>
+        <a href="../../../index.php"><span xml:lang="en" ><li>Home</li></span></a>
+        <li id="active">Nuove</li>
+        <a href="../../../Pagine/Annunci/Usate/usate.php" ><li>Usate</li></a>
+        <a href="../../../Pagine/Info/info.php" ><li>Info</li></a>
+        <a href="../../../Pagine/AreaPersonale/TestDrive/testDrive.php" ><li>Test Drive</li></a>
+        <a href="../../../Pagine/ChiSiamo/chiSiamo.php" ><li>Chi Siamo</li></a>
+    </ul>
+</div> 	
+<div id="contenuto">
+    <div id="listino">
+        <h2>Le nostre offerte per auto Nuove</h2>
+        <p>Tutte le nostre auto vengono vendute con due anni di garanzia ed un anno di <abbr title="Assicurazione auto">RCA</abbr> incluse</p>  
+    </div>
+

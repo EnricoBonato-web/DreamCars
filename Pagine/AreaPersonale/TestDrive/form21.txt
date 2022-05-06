@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+<body>
+<form id="seldata">
+<fieldset>
+<legend>Scegli data ed ora della prova:</legend>
+<input type="text" name="date" id="sel" value=" "/>
+</form>	
+</fieldset>
+</form>
+

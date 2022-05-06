@@ -1,0 +1,79 @@
+<?php
+include "../../config.php";
+session_start();
+echo file_get_contents("../../Template/HeadBase.txt");
+if($_SESSION["dipendente"]){
+    echo("Buon lavoro, ".$_SESSION["nome"]." <br/>");
+    echo("<a href='../LoginRegistrati/logout.php'>Logout</a>");
+}
+else{
+    echo "<a href='login.html#tab2'><span xml:lang='en' tabindex='1'>Login</span></a>";}
+?>
+</div>
+  <div id="breadcrumb">
+        Ti trovi in: <a href="../../index.php">Home</a> / <a href="../AreaPersonaleDipendenti/AreaPersonaleDipendenti.php">Area Personale Dipendente</a> / Gestione Account 
+    </div>
+    <label for="show-menu" class="show-menu">Menu</label>
+    <input type="checkbox" id="show-menu" role="button">
+    
+    <div id="menu">
+        <ul>
+            <a href="../../index.php"><span xml:lang="en" ><li>Home</li></span></a>
+            <a href="../../Pagine/Annunci/Nuove/nuove.php"><li>Nuove</li></a>
+            <a href="../../Pagine/Annunci/Usate/usate.php"><li>Usate</li></a>
+            <a href="../../Pagine/Info/info.php" ><li>Info</li></a>
+	        <a href="../../Pagine/AreaPersonale/TestDrive/testDrive.php" ><li>Test Drive</li></a>
+            <a href="../../Pagine/ChiSiamo/chiSiamo.php"><li>Chi Siamo</li></a>  
+        </ul>
+    </div> 
+
+   <div id="contenuto">
+  <div id="tabs">
+     <ul id ="linkLog">
+     <li><a href='gestioneAnnunci.php'>Gestione Annunci</a></li>
+     <li><a href="gestioneAccountDipendenti.php" >Gestione Account</a></li>
+     <li><a href="gestioneRiparazioniDipendenti.php">Gestione Riparazioni</a> </li>
+     </ul>
+    </div>
+
+	<p>Visualizza o modifica qui i dati del tuo account</p>
+	<?php 
+		$matr=$_SESSION['dipendente'];
+		if(isset($_POST['mod']) && $_POST['mod']=="modifica"){
+			$okpwd=($_POST['password']==$_POST['password2'] && $_POST['password']!="" && $_POST['password2']!="");
+			if($okpwd){			
+				$update="update Dipendente set telefono='".$_POST['tel']."', mail='".$_POST['mail']."',password='".$_POST['password']."' where Matricola='".$matr."'";
+				$res=mysqli_query($conn,$update);
+				if($res)
+					echo "dati aggiornati";
+				else
+					echo "dati non aggiornati";
+			}
+			else
+				echo "errore password";		
+		}
+		$query="select * from Dipendente where Matricola='".$matr."'";
+		$res=mysqli_query($conn,$query);
+		$row=$res->fetch_assoc();
+	?>
+	<div id="ModificaDatiAccount">
+		<fieldset>
+		<legend>modifica dati account</legend>
+		<form action='modificaAccountDip.php' method='POST'>
+			<input type='hidden' name='mod' value='modifica'/>
+			<input type='text' name='tel' value='<?php echo $row['telefono'];?>' />		
+			<input type='text' name='mail' value='<?php echo $row['mail'];?>' />		
+			<input type='password' name='password' value='<?php echo $row['password'];?>' />		
+			<input type='password' name='password2' value='<?php echo $row['password'];?>' />		
+			<input type='submit' value='conferma' />		
+		</form>
+		<form action='gestioneAccountDipendenti.php'>
+			<input type='submit' value='annulla'/>
+		</form>
+		</fieldset>		
+	</div>	
+    </div>
+
+<?php
+	echo file_get_contents("../../Template/Footer.txt");	
+?>

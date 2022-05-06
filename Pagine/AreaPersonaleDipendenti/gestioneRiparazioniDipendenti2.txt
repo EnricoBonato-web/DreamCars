@@ -1,0 +1,7 @@
+	<div id="inserimento">
+		<form action='gestioneRiparazioniDipendenti.php' method="POST">
+			<fieldset>
+				<legend>inserimento riparazione</legend>
+				<input type="hidden" name='mod' value="inserimento">
+				<label for="telaio">telaio:</label>
+				<select name='telaio'>

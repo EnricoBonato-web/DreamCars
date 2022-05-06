@@ -1,0 +1,62 @@
+<?php
+session_start();
+include '../../config.php';
+echo file_get_contents("../../Template/HeadBase.txt");
+if($_SESSION["user"]){ 
+    echo("Buongiorno, ".$_SESSION["nome"]." </br>"); 
+    echo("<a href='../../Pagine/LoginRegistrati/logout.php'>Logout</a>"); 
+} 
+?>
+</div> 
+    
+<div id="breadcrumb"> 
+    Ti trovi in: <a href="../../index.php" >Home</a> / <a href="../../Pagine/AreaPersonale/areaPersonale.php">Area Personale </a> / Visualizza riparazioni
+</div> 
+
+<label for="show-menu" class="show-menu">Menu</label>
+<input type="checkbox" id="show-menu" role="button">
+
+<div id="menu">
+    <ul>
+        <a href="../../index.php"><span xml:lang="en" ><li>Home</li></span></a>
+        <a href="../../Pagine/Annunci/Nuove/nuove.php"><li>Nuove</li></a>
+        <a href="../../Pagine/Annunci/Usate/usate.php"><li>Usate</li></a>
+        <a href="../../Pagine/Info/info.php" ><li>Info</li></a>
+        <a href="../../Pagine/AreaPersonale/TestDrive/testDrive.php" ><li>Test Drive</li></a>
+        <a href="../../Pagine/ChiSiamo/chiSiamo.php"><li>Chi Siamo</li></a>  
+    </ul>
+</div>
+
+<div id="contenuto"> 
+<div id="funzioniPag">
+    <ul id ="listaFunz">
+        <li ><a href="gestioneAccount.php">Gestione Account</a></li>
+        <li ><a id="activedip">Visualizza Riparazioni</a> </li>
+    </ul>
+</div>
+    <p>Qui puoi visualizzare lo stato delle tue riparazioni</p>  
+    <div id='listaAuto'>
+        <?php
+        $autoutenteq="select StoricoVendite.Num_Telaio as telaio, Auto.Marca as marca, Auto.Modello as modello from StoricoVendite,Auto,Riparazione where StoricoVendite.Cliente='".$_SESSION["user"]."' and Auto.Num_Telaio=StoricoVendite.Num_Telaio and Riparazione.Numero_Telaio=StoricoVendite.Num_Telaio";
+        $autoutente=mysqli_query($conn,$autoutenteq);
+        if($autoutente && $autoutente->num_rows>0){
+            echo"<h2>le tue auto in assistenza:</h2>";
+            while($row=$autoutente->fetch_assoc()){
+                echo 
+                "<a href='listaRiparazioni.php?telaio=$row[telaio]'>
+                <div class='autoInRiparazione'>
+                    <p>marca: ".$row['marca']."</p>
+                    <p>modello: ".$row['modello']."</p>
+                    <p class='ripa'>visualizza riparazioni</p>
+                    </div>
+  		</a>";
+            }
+        }
+        else
+            echo "non hai auto in assistenza"; 
+?>
+    </div>
+</div>
+<?php
+    echo file_get_contents("../../Template/Footer.txt");
+?>

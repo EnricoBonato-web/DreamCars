@@ -1,0 +1,129 @@
+<?php 
+session_start(); 
+include "../../config.php"; 
+echo file_get_contents("../../Template/HeadBase.txt");
+if($_SESSION["dipendente"]){
+    echo("Buon lavoro, ".$_SESSION["nome"]." </br>");
+    echo("<a href='../LoginRegistrati/logout.php'>Logout</a>");
+}
+else{
+    echo "<a href='login.html#tab2'><span xml:lang='en' tabindex='1'>Login</span></a>";}
+?>  
+     </div> 
+        <div id="breadcrumb"> 
+             Ti trovi in: <a href="../../index.php">Home</a> / <a href="../AreaPersonaleDipendenti/AreaPersonaleDipendenti.php">Area Personale Dipendente</a> / Visualizza riparazioni
+      </div>
+<label for="show-menu" class="show-menu">Menu</label>
+<input type="checkbox" id="show-menu" role="button">
+
+<div id="menu">
+    <ul>
+        <a href="../../index.php"><span xml:lang="en" > <li>Home</li></span></a>
+        <a href="../../Pagine/Annunci/Nuove/nuove.php"> <li>Nuove</li></a>
+        <a href="../../Pagine/Annunci/Usate/usate.php"> <li>Usate</li></a>
+        <a href="../../Pagine/Info/info.php" ><li>Info</li></a>
+        <a href="../../Pagine/AreaPersonale/TestDrive/testDrive.php" ><li>Test Drive</li></a>
+        <a href="../../Pagine/ChiSiamo/chiSiamo.php"><li>Chi Siamo</li></a>  
+    </ul>
+</div>
+
+      <div id="contenuto"> 
+  <div id="funzioniPag">
+     <ul id ="listaFunz">
+     <li><a href='gestioneAnnunci.php'>Gestione Annunci</a></li>
+     <li ><a href="gestioneAccountDipendenti.php" tabindex="8">Gestione Account</a></li>
+     <li ><a id="activedip">Gestione Riparazioni</a> </li>
+     </ul>
+    </div>
+       
+  <p>Qui puoi visualizzare lo stato delle tue riparazioni</p> 
+
+<?php
+	//idelim e' id riparazione da eliminare	
+	$idelim=$_GET['idelim'];
+	if(isset($idelim)){
+		$remove="delete from Riparazione where Id_Riparazione='".$idelim."'";
+		$res=mysqli_query($conn,$remove);
+		if($res)
+			echo"eliminazione avvenuta correttamente";
+		else
+			echo"eliminazione non avvenuta";
+	}
+
+	if(isset($_POST['mod']) && ($_POST['mod']=="inserimento"||$_POST['mod']=="modifica") && $_POST['mod']!="bypass"){
+		//passati attraverso form modifica o inserimento
+		$telaio=$_POST['telaio'];
+		$descr=$_POST['descr'];
+		$ora=$_POST['ora'];
+		$data=$_POST['data'];		
+		if($_POST['mod']=="inserimento"){//caso inserimento
+			$insert="insert into Riparazione (Numero_Telaio,descrizione,dataInizio,ora) values ('".$telaio."','".$descr."','".$data."','".$ora."')";
+				//query inserimento o modifica			
+				$result=mysqli_query($conn,$insert);
+				if($result)
+					echo "inserimento avvenuto correttamente";
+				else
+					echo "inserimento non avvenuto";
+
+		}
+		else//caso modifica
+			if($_POST['mod']=="modifica"){
+				$insert="update Riparazione set Numero_Telaio='".$telaio."', descrizione='".$descr."',dataInizio='".$data."',ora='".$ora."' where Id_Riparazione='".$_POST['idrip']."'";
+				//query inserimento o modifica			
+				$result=mysqli_query($conn,$insert);
+				if($result)
+					echo "modifica avvenuta correttamente";
+				else
+					echo "modifica non avvenuta";
+			}
+	}
+	if(!$_SESSION['dipendente'])
+			echo("Non sei autorizzato a visualizzare questa pagina");
+	else{
+						$query="SELECT Id_Riparazione, Numero_Telaio, dataInizio, ora, costorip, descrizione FROM Riparazione ORDER BY Id_Riparazione";
+						$result = mysqli_query($conn, $query);			
+            if($result->num_rows==0)
+							echo("Nessun risultato!");
+						else{
+							echo("<table><caption><p>Lista Riparazioni</p></caption>");
+							echo"<thead><tr><th>Num.Telaio</th><th>Descrizione</th><th>Costo</th><th>Data</th><th>Ora</th><th>Modifica</th><th>Interventi</th><th>Elimina</th></tr></thead>";
+
+							while($row = $result->fetch_assoc()) {
+								echo "<tr><td>".$row['Numero_Telaio']."</td><td>".$row['descrizione']."</td><td>".$row['costo']."</td><td>".$row['dataInizio']."</td><td>".$row['ora']."</td><td><a href='modificaRip.php?idrip=$row[Id_Riparazione]'>Modifica</a></td><td><a href='gestInterRip.php?idrip=$row[Id_Riparazione]'>Visualizza</a></td><td><a href='gestioneRiparazioniDipendenti.php?idelim=$row[Id_Riparazione]'>Elimina</a></td></tr>";
+							}		
+							echo("</table>");
+					}
+					// liberazione delle risorse occupate dal risultato	
+					$result->free();
+		}						
+	?>
+	<div id="inserimento">
+		<form action='gestioneRiparazioniDipendenti.php' method="POST">
+			<fieldset>
+				<legend>inserimento riparazione</legend>
+				<input type="hidden" name='mod' value="inserimento">
+				<label for="telaio">telaio:</label>
+				<select name='telaio'>
+				<?php
+					$telaioq="select Num_Telaio from Auto";
+					$telaio=mysqli_query($conn,$telaioq);
+					if($telaio && $telaio->num_rows>0){
+						while($row=$telaio->fetch_assoc()){
+							echo"<option value='".$row['Num_Telaio']."'>".$row['Num_Telaio']."</option>";
+						}
+					}
+				?>
+				</select><br/>
+				<label for="descr">descrizione:</label>
+				<input type="text" name="descr" value="" /><br/>
+				<label for="data">data:</label>
+				<input type="text" name="data" value="" /><br/>
+				<label for="ora">ora:</label>
+				<input type="text" name="ora" value="" /><br/>
+				<input type="submit" value="invia" />
+			</fieldset>
+		</form>
+	</div>
+ </div>
+  <?php echo file_get_contents("../../Template/Footer.txt");?>
+

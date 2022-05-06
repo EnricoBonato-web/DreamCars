@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it"> 
+   <head> 
+      <meta http-equiv="Content-type" content="txt/html; charset=utf-8" /> 
+      <title> Auto Nuove-DreamCars  </title> 
+      <meta name="title" content="Concessionaria Dreamcars" /> 
+      <meta name="description" content="" /> 
+      <meta name="keyword" content="concessionaria, auto,vendita , assistenza, padova, nuovo"/> 
+      <link rel="shortcut icon" href="img/logo-min.jpg" /> 
+      <link href="/DreamCars/Style/style.css" rel="stylesheet" type="text/css"> 
+      <link href="/DreamCars/Style/print.css" rel="stylesheet" type="text/css" media="print">
+      <link href="/DreamCars/Style/mobile.css" rel="stylesheet" type="text/css" media="screen">
+      <script type="text/javascript"  src="../../Javascript/mappa.js"></script> 
+    </head> 
+<body > 
+      <div id="header"> 
+      <a href="../../index.php"><img id ="logoDC2" src="../../img/logoDC2.png" /></a> 
+         <h1><span xml:lang="en">DreamCars</span></h1> 
+       <div id="login" > 
+ 
+

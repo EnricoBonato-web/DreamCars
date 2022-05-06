@@ -1,0 +1,12 @@
+				</select><br/>
+				<label for="descr">descrizione:</label>
+				<input type="text" name="descr" value="" /><br/>
+				<label for="data">data:</label>
+				<input type="text" name="data" value="" /><br/>
+				<label for="ora">ora:</label>
+				<input type="text" name="ora" value="" /><br/>
+				<input type="submit" value="invia" />
+			</fieldset>
+		</form>
+	</div>
+ </div>

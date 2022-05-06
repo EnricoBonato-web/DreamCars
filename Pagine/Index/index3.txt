@@ -1,0 +1,53 @@
+	</select>
+	<label for="alimentazione">tipo:</label>
+	<select name="alimentazione">
+		<option value="Benzina">benzina</option>
+		<option value="Diesel">diesel</option>
+	</select>
+	<label for="nuova">stato:</label>
+	<select name="nuova">
+		<option value='1'>nuova</option>
+		<option value='0'>usata</option>
+	</select>
+	<label for="prezzo">prezzo:</label>
+	<select name="prezzo">
+	      <option value="5000">5.000 €</option> 
+	      <option value="10000">10.000 €</option> 
+	      <option value="15000">15.000 €</option> 
+	      <option value="20000">20.000 €</option> 
+	      <option value="30000">30.000 €</option> 
+	      <option value="50000">50.000 €</option> 
+	      <option value="70000">70.000 €</option> 
+	      <option value="90000">90.000 €</option> 
+	      <option value="110000">110.000 €</option> 
+	      <option value="150000">150.000 €</option> 
+	      <option value="200000">200.000 €</option> 
+	      <option value="200001">oltre 200.000 €</option>			
+	</select>
+	<input type='submit' value='cerca' />
+    
+</form>
+</div>
+
+
+<div class="brand-container">
+    <p class="brander">Nel nostro concessionario abbiamo a disposizione i migliori marchi</p>
+    <p class="brander">Scegli quello che preferisci per vedere le offerte!</p>
+    <ul class="brand-list">
+        <li><a><img class="brand" src="img/loghi/Alfa_Romeo_2015.svg.png" alt="Logo Alfa Romeo"></a></li>
+        <li><a><img class="brand" src="img/loghi/1200px-Logo_della_Fiat.svg.png" alt="Logo Fiat"></a></li>
+        <li><a><img class="brand" src="img/loghi/Logo_della_Lancia.svg.png" alt="Logo Lancia"></a></li>
+        <li><a><img class="brand" src="img/loghi/1200px-Logo_della_Maserati.svg.png" alt="Logo Maserati"></a></li>
+        <li><a><img class="brand" src="img/loghi/Volkswagen-logo-2000-1920x1080.png" alt="Logo VolksWagen"></a></li>
+        <li><a><img class="brand" src="img/loghi/Renault-logo-2015-2048x2048.png" alt="Logo Renault"></a></li>
+        <li><a><img class="brand" src="img/loghi/Logo_della_Citroën.svg.png" alt="Logo Citroën"></a></li>
+        <li><a><img class="brand" src="img/loghi/2000px-BMW.svg.png" alt="Logo BMW"></a></li>
+    </ul>
+</div> 
+
+<footer>
+    <p><small>Il sito è stato creato per un progetto nell'ambito del corso di <a href="http://docenti.math.unipd.it/gaggi/tecweb/">Tecnologie Web</a></small></p>
+</footer>
+
+</body>
+</html>

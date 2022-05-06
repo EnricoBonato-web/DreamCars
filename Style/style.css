@@ -1,0 +1,721 @@
+*{
+    padding: 0em;
+    margin: 0em;
+}
+
+fieldset{
+    line-height: 1.5em;
+}
+
+input[type=submit] {
+    margin: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+body {
+    font-family:  Helvetica, Arial, Verdana,  sans-serif;
+    max-width: 1024px;
+    margin: auto;
+    border: 1px, solid, #ddd; 
+    height: 100%;
+    
+}
+
+a:link {
+    color: #242424;
+}
+
+a:visited {
+    color: #646464;
+}
+
+/* sezione header */
+
+/* logo */
+#header  img {
+    float: left;
+    max-width: 20%;
+  /*  position: absolute;
+    top: 72px;*/
+}
+
+#header h1{
+    width: 55%;
+    float:left;
+    color: #242424;
+    font-size: 2em;
+    padding-top :35px;
+    padding-left: 20px;
+}
+
+#login{
+    text-align: right;
+    width: 20%;     
+    float: left;
+    height: 52px;
+    vertical-align: bottom;
+    margin-top: 20px;}
+
+#tabs ul 
+{
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    width: 80%;    
+    border-top: 2px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    font-style: italic;
+    height: 1.2em;
+    border-radius: 50px 50px 0 0;
+    position:fixed;
+    bottom:0;
+    left: 10%;
+    right: 0;
+    background-color:white;
+}
+
+/* sezione breadcrumb */
+
+#breadcrumb {
+    padding: 0.5em 0em 0.5em 0em;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    width: 100%;
+    float:right;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+}
+
+/* sezione menu */
+
+#menu {
+    padding-top: 0.8em;
+    font-size: 1.1em;
+    font-weight: bold;
+    float: left;
+    width: 15%;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    float: left;
+}
+
+#menu ul li{
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.4em;
+    width: 150%;    
+    border-width:2px;
+    border-radius: 5px 5px 30px 0;
+    border-bottom-color: black;
+    border-bottom-style:outset;
+}
+
+#menu ul li:hover
+{
+    width: 200%;
+    box-shadow: 2px 5px 2px #888888;
+    transition: all 0.4s ease-out;
+}
+#menu ul a{
+    text-decoration: none; 
+}
+
+/* menu a comparsa lato mobile */
+
+.show-menu {
+	text-decoration: none;
+	background: #00004f;
+    color: white;
+    font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+input[type=checkbox]{
+    display: none;
+    -webkit-appearance: none;
+}
+
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/* altre pagine */
+
+#contenuto {
+    float: right;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 2em;
+}
+
+#active {
+    background-color: #00004f;
+    width: 200% !important;
+    color: white;
+}
+
+/*  home */
+
+/*slideshow*/ 
+.slideshow-container img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    max-width: 1024px;
+    max-height: 256px;
+}
+
+.slideshow-container {
+    float: right;
+    height: 256px;
+    margin:auto  ;
+    max-width: 1024px;
+    width: 80%;
+    align-content: center;
+}
+
+.nascosta{
+    display: none;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    top:256px;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* next button */
+
+.next {  
+    right: 5%;
+}
+
+.prev{
+    left: 20%;
+}
+
+    /* On hover  */
+.prev:hover, .next:hover {
+    color: white;
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/4 etc) */
+
+.numbertext {
+    color: #585858;
+    font-size: 12px;
+    padding: 8px 12px;
+    float: right;
+    width: 10%;
+}
+
+#dot{
+    float: right;
+    width: 80%;
+    text-align: center;}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin-bottom : 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* brand list */
+
+#slogan{
+    font-size: 1.2em;
+    line-height: 1.3em;
+    font-weight: bolder;
+}
+
+.brand-container {
+    width: 100%;
+    display: table;
+    clear: both;
+    float: left;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    border: solid 1px black;
+    background-color: #ddd;
+    border-radius: 5px 5px  5px 5px ;  
+}
+
+.brand-list {
+    text-align: center;
+}
+
+.brand-list li {
+    display: inline-block;
+    float: none;
+    width: 12%;
+}
+
+.brand-list li a {
+    height: auto;
+}
+
+.brander {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.brand {
+    min-height:  60px;
+    min-width:  60px;
+    height:  80px;
+    width:  80px;
+    margin: 15px;
+    padding 10px;
+}
+
+.brand:hover {
+    box-shadow: 0px 0px 5px #000;
+    margin: 5px;
+    min-width: 80px;
+    min-height: 80px;
+    width: 100px;
+    height: 100px;
+    transition: all 0.5s;
+}
+
+/* menu dipendenti */
+#activedip {
+    background-color: #00004f !important;
+    color: white !important;
+}
+
+#funzioniPag {
+    font-family: Verdana, sans-serif; 
+    font-size: 14px; 
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#funzioniPag li {
+    display:table-cell;
+    vertical-align: middle;
+    list-style: none;
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    border-left: 1px;
+}
+
+#funzioniPag li a {
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+    width: 200px;
+    height: 35px;
+    display: block;
+    line-height: 35px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px 30px  0 0 ;  
+    border-right-style:solid;
+    border-right-color:#c3c3c3;
+    border-right-width:2px;
+    text-align: center;
+    margin-left: auto;
+}
+
+#listaFunz {
+    width: auto; 
+    margin-bottom: 20px;
+}
+
+/*login.html*/
+#linkLog {
+    display:table;
+}
+
+#tabs {
+    font-family: Verdana, sans-serif; 
+    font-size: 14px; 
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tabs li {
+    display:table-cell;
+    vertical-align: middle;
+    list-style: none;
+    width: 150px;
+    height: 50px;
+    padding-top: 10px;
+    border-left: 1px;
+}
+
+#tabs li a {    
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+    height: 35px;
+    display:block;
+    line-height: 35px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px 30px  0 0 ;  
+    border-right-style:solid;
+    border-right-color:#c3c3c3;
+    border-right-width:2px;
+    text-align: center;
+    margin-left: auto;
+}
+
+#container {    
+    width: 600px;
+    clear: both;
+    height: 400px; /* 350px + 25px (padding sx) + 25px (padding dx) */
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    text-align: center;
+    color: #222;
+    font-family: Verdana;
+    font-size: 12px;
+    background-color: #efefef;
+    padding: 25px;
+    width: 600px;
+    height: 360px;
+    line-height: 22px;
+} 
+/*Registrami.html*/
+
+#registra {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+div.FormReg{
+    align-content: center;
+    text-align: center;
+}
+
+div.nuova {
+    width: 100%;
+    float: left;
+	margin-bottom: 20px;
+    border-bottom-style: solid;
+	border-bottom-color: #656565;
+    text-decoration: none;
+}
+#navigatori{
+    width: 100%;
+    float: left;
+    
+}
+#precedente{
+    float: left;
+    text-align: right;
+    width: 20%;
+    padding: 10%;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+#pag{width: 10%;
+float: left;
+    padding: 5%;
+    padding-bottom: 5px;
+    padding-top: 10px;}
+#successivo{
+float: right;
+    width: 20%;
+    padding: 10%;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+#marca {
+    font-size: 40px;
+}
+    
+#modello, #km {
+        margin-left: auto;
+        font-size: 30px;
+    }
+
+#prezzo {
+    color:dimgrey;
+    text-align: right;
+}
+
+.fotoNuove{
+    height: 25%;
+    width: 40%;
+}
+
+#submitRimozione{
+    background-image: url('/var/www/html/DreamCars/img/YUsata.jpg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    width:100px;
+    height:44px;
+}
+
+/*  new.php*/
+
+
+
+#tabellaAuto img
+{
+    float: left;
+    width: 60%;
+}
+
+
+#tabellaAuto table
+{
+    float: left;
+    width: 40%; 
+}
+#tabellaAuto tr{
+    line-height: 1.5em;
+    
+}
+#tabellaAuto td
+{
+    padding-left: 10px;
+}
+.pari
+{
+    background-color: #d0d0d0;
+    padding-left: 10px;
+}
+#descrizione
+{
+    width: 100%;
+    float: left;
+}
+
+/* button "Scopri" */
+.button {
+  float: right;
+  display: inline-block;
+  background-color: #00004f;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button:hover {
+    background-color: #8b0000;
+    color: white;
+}
+
+.button span:after {
+  content: '\00bb';
+  color: white;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*chi siamo*/
+
+#googleMap {
+    width:100%;
+    height:0px;
+    margin-bottom: 10px;
+    margin-top: 1em;
+}
+
+/* area personale cliente*/
+#form {
+    padding-bottom: 2em;   
+}
+.autoInRiparazione
+{
+    border: solid 1px black;
+    border-collapse: collapse;
+    margin: 10px;
+    float: left;
+    width: 100%;
+    text-decoration: none;
+    
+}
+
+.autoInRiparazione p {
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+.ripa{
+    float: right;
+    width: 20%;
+    background-color: #e4e0e0;
+    border-radius: 10px   0  0 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.ripa:hover{
+    text-shadow:2px 2px 2px #a7a7a7; 
+    box-shadow: 2px 5px 2px #888888;
+    border-radius: 10px 10px 10px 10px;  
+    background-color: #242424;
+    color: white;
+    transition: all 0.4s ease-out;
+}
+
+#listaAuto {
+    color: black;
+}
+
+.miniicon {
+    width: 40px;
+    height: 40px;
+    max-width: none !important;
+    max-height: none !important;
+}
+
+.TDtab {
+    width: 100%;
+}
+
+/*info*/
+#orario    td {
+padding: 5px;    
+    padding-left: 20px;
+}
+#tabella{
+    background-color: #d0d0d0;
+    
+}
+#orario td + td { 
+    border-left: 1px solid #d0d0d0; 
+}
+table {
+    border: solid 1px black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    background-color: #d0d0d0;
+}
+
+th, td {
+    border: solid 1px black;
+    padding: 10px;
+}
+
+caption {
+    border: solid 1px black;
+    font-weight: bold;
+}
+
+tbody {
+    border: solid 1px black;
+}
+
+/*gestione dati */
+#datiAccount{
+    width: 100%;
+    border: solid 1px black;
+    border-collapse: collapse;
+    line-height:1.5em;
+    float: left;
+}
+#datiAccount p{
+    float: left;
+    width: 80%;
+}
+
+#modifica
+{
+    text-align:right;
+    margin-top: auto;
+    margin-right: 5px;
+}

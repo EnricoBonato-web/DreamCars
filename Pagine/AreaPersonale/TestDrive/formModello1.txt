@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+
+<body>
+	<form id="prenotazioneTest" >
+		<fieldset>
+			<legend>Modello della prova:</legend>
+				<select name="modello">
+

@@ -1,0 +1,35 @@
+		</select>
+		<select>
+			
+		</select>
+		<select>
+		
+		</select>
+		<select>
+		
+		</select>		     
+		     
+	</form>
+</div>	
+
+<div class="brand-container">
+    <p class="brander">Nel nostro concessionario abbiamo a disposizione i migliori marchi </p>
+    <p class="brander">Scegli quello che preferisci per vedere le offerte!</p>
+    <ul class="brand-list">
+        <li><a><img class="brand" src="img/loghi/Alfa_Romeo_2015.svg.png"></a></li>
+        <li><a><img class="brand" src="img/loghi/1200px-Logo_della_Fiat.svg.png"></a></li>
+        <li><a><img class="brand" src="img/loghi/Logo_della_Lancia.svg.png"></a></li>
+        <li><a><img class="brand" src="img/loghi/1200px-Logo_della_Maserati.svg.png"></a></li>
+        <li><a><img class="brand" src="img/loghi/Volkswagen-logo-2000-1920x1080.png"></a></li>
+        <li><a><img class="brand" src="img/loghi/Renault-logo-2015-2048x2048.png"></a></li>
+        <li><a><img class="brand" src="img/loghi/Logo_della_Citroën.svg.png"></a></li>
+        <li><a><img class="brand" src="img/loghi/2000px-BMW.svg.png"></a></li>
+    </ul>
+</div> 
+
+<footer>
+    <p><small>Il sito è stato creato per un progetto nell'ambito del corso di <a href="http://docenti.math.unipd.it/gaggi/tecweb/">Tecnologie Web</a> </small>
+    </p>
+</footer>
+</body>
+</html>

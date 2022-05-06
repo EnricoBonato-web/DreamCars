@@ -1,0 +1,55 @@
+
+<?php
+include "../../config.php";
+session_start();
+echo file_get_contents("../../Template/HeadBase.txt");
+      if($_SESSION["user"]){ 
+        echo("Benvenuto, ".$_SESSION["nome"]." "); 
+        echo("<a href='logout.php'>Logout</a>"); 
+      } 
+?>   
+     </div> 
+        <div id="breadcrumb"> 
+        Ti trovi in: <a href="../../index.php" tabindex="2">Home</a> / <a href="areaPersonale.php" tabindex="1">Area Personale</a> / Visualizza riparazioni
+      </div> 
+       
+ <div id="menu">
+    <ul>
+        <a href="../../index.php"><span xml:lang="en" ><li>Home</li></span></a>
+        <a href="../../Pagine/Annunci/Nuove/nuove.php"><li>Nuove</li></a>
+        <a href="../../Pagine/Annunci/Usate/usate.php"><li>Usate</li></a>
+        <a href="../../Pagine/Info/info.php" ><li>Info</li></a>
+        <a href="../../Pagine/AreaPersonale/TestDrive/testDrive.php" ><li>Test Drive</li></a>
+        <a href="../../Pagine/ChiSiamo/chiSiamo.php"><li>Chi Siamo</li></a>  
+    </ul>
+</div>
+
+     <div id="tabs">
+     <ul id ="linkLog">
+     <li ><a href="gestioneAccount.php" tabindex="8">Gestisci il tuo account</a></li>
+     <li ><a href="gestioneRiparazioni.php">Visualizza le tue riparazioni</a> </li>
+     </ul>
+    </div>
+      
+      <div id="contenuto"> 
+  <p>Qui puoi visualizzare lo stato delle tue riparazioni</p> 
+<div id="riparazioni">
+<?php
+	$telaio=$_GET["telaio"];	
+	$riparazioniq="select Riparazione.descrizione as descrip, Riparazione.Id_Riparazione as idrip from Riparazione where Riparazione.Numero_Telaio='".$telaio."'";
+	$riparazioni=mysqli_query($conn,$riparazioniq);
+	if($riparazioni && $riparazioni->num_rows>0){
+		echo"<h4>riparazioni:</h4>";
+		while($row=$riparazioni->fetch_assoc()){
+			echo"<div class='riparazione'>
+			<p>descrizione riparazione: ".$row['descrip']."</p>			
+			<a href='listaInterventi.php?riparazione=$row[idrip]'>lista interventi</a>			
+			</div>";
+		}
+	}
+?>
+</div>
+</div>
+<?php 
+	echo file_get_contents("../../Template/Footer.txt");
+?>

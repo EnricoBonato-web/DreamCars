@@ -1,0 +1,10 @@
+			</select></br>
+			<label for='data'>data:</label>
+			<input type="text" name='data' /></br>
+			<label for='ora'>ora:</label>			
+			<input type="text" name='ora' /></br>
+			<input type="submit" value="invia"/>
+		</form>
+		</fieldset>
+	</div>
+</div>

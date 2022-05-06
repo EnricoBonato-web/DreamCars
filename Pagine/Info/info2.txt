@@ -1,0 +1,30 @@
+		   </div>
+       </div>
+    <div id="breadcrumb">
+        Ti trovi in: <a href="../../index.php" tabindex="2">Home</a> / Info
+    </div>
+    <label for="show-menu" class="show-menu">Menu</label>
+	  <input type="checkbox" id="show-menu" role="button">
+    <div id="menu">
+        <ul>
+            <a href="../../index.php"><span xml:lang="en" ><li>Home</li></span></a>
+            <a href="../../Pagine/Annunci/Nuove/nuove.php" ><li>Nuove</li></a>
+            <a href="../../Pagine/Annunci/Usate/usate.php" ><li>Usate</li></a>
+            <li  id="active" >Info</li>
+            <a href="../../Pagine/AreaPersonale/TestDrive/testDrive.php" ><li>Test Drive</li></a>
+            <a href="../../Pagine/ChiSiamo/chiSiamo.php"><li>Chi siamo</li></a>
+        </ul>
+     </div>
+<div id="contenuto" onload="avvia()">
+<noscript>Puoi trovare il nostro concessionario in <a href="https://www.google.com/maps?ll=45.411358,11.887821&z=18&t=m&hl=en-US&gl=US&mapclient=apiv3&cid=18313659128616145629"> Torre Archimede, via Via Trieste, 63 Padova </a></noscript>
+ 
+<div id="googleMap" ></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaUkxp5oyLvwG5UI0jY5EmMg2InF-uMUA&callback=myMap"></script>
+  <table id="orario">
+	<tr id="tabella"><td>Giorno</td><td>Orario</td></tr>
+	<tr><td>Lun</td><td>15:00-19:30</td></tr>
+	<tr><td>Mar-Sab  </td><td> 9:00-12:00 15:00-19:30</td></tr>
+	<tr><td>Dom</td><td>chiuso</td></tr>
+</table> 
+</div>
+ 

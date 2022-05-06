@@ -1,0 +1,8 @@
+		</div>	
+						
+		<footer>
+           <p><small>Il sito è stato creato per un progetto nell'ambito del corso di <a href="http://docenti.math.unipd.it/gaggi/tecweb/">Tecnologie Web</a> </small></p>
+    </footer>
+    </body>
+  </html> 
+

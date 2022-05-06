@@ -1,0 +1,98 @@
+HOME:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+<p><h2>Benvenuti nel nostro sito!</h2></p> 
+<p>Il gruppo <span xml:lang="en">DreamCars</span> garantisce <b>la miglior qualit&agrave a prezzi competitivi</b>.</p>
+<p>Il nostro parco auto varia dal nuovo <acronym title ="chilometro zero" >km0</acronym>, all&rsquo; usato garantito. <span xml:lang="en">DreamCars</span> inoltre offre <b>assistenza qualificata a qualsiasi modello venduto dal Gruppo</b>.</p>
+<h3><span xml:lang="en">DreamCars</span> l&rsquo;automobile dei tuoi sogni, realt&agrave</h3>
+
+LOGIN:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+<p><h2>Benvenuto!</h2></p>
+<p>Selezionare <b><span xml:lang="en">Login</span></b> se si dispone di un <span xml:lang="en">account</span> gi&agrave attivo, oppure selezionare <b>Registrati</b> per iniziare la procedura di registrazione.</p>
+<p><b>Perch&egrave; registrarmi?</b></p>
+<p>Tramite registrazione al nostro sito, Lei potr&agrave; <b>vedere in <span xml:lang="en">real-time</span> lo stato di avanzamento della Sua assistenza</b>, e prenotare direttamente un <span xml:lang="en">test-drive</span>.</p> 
+<p>Noi di <span xml:lang="en">DreamCars</span> abbiamo a cuore la Sua riservatezza: <b>tutti i dati inseriti saranno elaborati nel pi&ugrave; completo rispetto della privacy.</b></p>
+
+NUOVE:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+<p><h2>Benvenuto! </h2></p>
+<p>Questa pagina mostra in rassegna tutte le nostre nuove auto disponibili ed in pronta consegna</p> 
+<p>Tutte le nostre auto vengono vendute secondo una formula che <b>offre un anno di <acronym title ="Responsabilità Civile Autoveicolo">RCA</acronym> gratuito!</b></p>
+
+USATE:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+<p><h2>Benvenuto!</h2></p> 
+<p>Questa pagina mostra in rassegna tutte le auto <b>usate garantite</b> presso la nostra sede.</p>
+<p>Tutte le auto usate che noi vendiamo devono superare dei <b>rigidissimi controlli qualitativi</b>, per poterVi offrire solo il meglio!</p>
+
+INFO:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+<p><h2>Ci venga a trovare in sede!</h2></p>
+<p>Sar&agrave; accolto da un <span xml:lang="en">team</span> di professionisti pronti a soddisfare ogni Sua esigenza.</p>
+<p>Gli orari di apertura dell&rsquo;autosalone e dell&rsquo;officina sono: </p>
+<table id="orari">
+<tr id="tabella"><td>Giorno</td><td>Orario</td></tr>
+	<tr><td>Lun</td><td>15:00-19:30</td></tr>
+	<tr><td>Mar-Sab  </td><td> 9:00-12:00 - 15:00-19:30</td></tr>
+	<tr><td>Dom</td><td>chiuso</td></tr>
+</table> 
+
+TESTDRIVE:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+<p><h2>Benvenuto sulla pagina di prenotazione di un <span xml:lang="en">testdrive!</span></h2></p> 
+<p><span xml:lang="en">DreamCars</span> offre <b><span xml:lang="en">testdrive</span> gratuiti</b> per qualsiasi auto presente nel nostro salone, sia nuova che usata.</p>
+<p>I <span xml:lang="en">tesdrive</span> sono per&ograve; <b>disponibili in un determinato orario</b>, che va dalle ore 15:00 alle ore 17:00.</p>
+<p>Tramite l&rsquo;apposito menu, selezioni l&rsquo;auto di Suo interesse, immettendo successivamente anche l&rsquo;ora. Sar&agrave; poi contattato il prima possibile da un nostro venditore per <b> confermare la data e l&rsquo;orario da Lei scelto.</b></p>
+
+CHI SIAMO:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+<p><span xml:lang="en">DreamCars</span> nasce dalla passione e la volont&agrave di <b>offrirVi l&rsquo;auto dei vostri sogni ad un prezzo unico ed imbattibile!</b></p> 
+<p><span xml:lang="en">DreamCars</span> lavora con <b>professionalit&agrave</b> nel settore da pi&ugrave; di <b>sette anni</b>, vantando un numero sempre maggiore di <b>clienti soddisfatti.</b></span> 
+<p>Il nostro <span xml:lang="en">team</span> di venditori e meccanici sar&agrave; sempre a <b>Vostra disposizione per qualsiasi esigenza</b></span>.
+<b><span xml:lang="en">DreamCars</span>: l&rsquo;automobile dei tuoi sogni, realt&agrave;</b>.
+
+REGISTRATI::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+<p><h2>Benvenuto!</h2></p>
+<p>Se non si dispone ancora di un <span xml:lang="en">account</span> attivo, in questa schermata ne verr&agrave; creato uno nuovo.</p>
+<p><b>Perch&egrave; registrarsi?</b></p>
+<p>Tramite registrazione, potr&agrave <b>prenotare un <span xml:lang="en">test-drive</span></b> e <b>vedere in tempo reale lo stato di assistenza della Sua auto</b>!</p>
+<p>Per registrarsi occorre compilare tutti i campi sottostanti, e premere successivamente sul pulsante <b>registrati</b>.</p>
+
+LOGIN::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+<p><h2>Benvenuto!</h2></p>
+<p>Inserisci il tuo <b>nome utente</b> e la tua <b><span xml:lang="en">password</span></b> per accedere alla tua area personale.</p>
+<p>Non si dispone ancora di un account? <b>Registrati subito!</b></p>
+
+UNA VOLTA CHE L'UTENTE HA FATTO IL LOGIN---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<p><h2>Benvenuto nella tua area personale!</h2></p>
+<p>Da questa pagina potr&agrave; gestire il Suo <span xml:lang="en">account</span>, modificando le informazioni personali o di contatto, e visualizzare le Sue riparazioni attive.</p>
+
+GESTISCI IL TUO ACCOUNT:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+<p><b>Benvenuto nella tua area personale!</b></p>
+<p>Da questa pagina potr&agrave; gestire il Suo <span xml:lang="en">account</span>, modificando le informazioni personali o di contatto, e visualizzare le Sue riparazioni attive.</p>
+
+VISUALIZZA LE TUE RIPARAZIONI:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+<h2>Benvenuto!</h2>
+<p>Da questa schermata visualizzer&agrave in <b>tempo reale</b> lo stato di avanzamento delle Sue riparazioni.</p>
+<p>Per qualsiasi info, non esiti a contattarci.</p>
+
+QUANDO IL DIPENDENTE HA FATTO IL LOGIN---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+VAI ALL’AREA PERSONALE:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+<p><h2>Benvenuto!</h2></p>
+<p>Questa &egrave; la schermata personale riservata ai dipendenti! Da qui si pu&ograve; <b>inserire</b> o <b>rimuovere</b> un annuncio.</p>
+
+INSERISCI UN ANNUNCIO:
+<p>Prego compilare tutti i campi sottostanti e, successivamente, premere su <b>inserisci annuncio.</b></p>
+
+RIMUOVI ANNUNCIO:
+<p>Per rimuovere o modificare un annuncio, cliccare sopra il pulsante corrispondente all&rsquo;azione voluta. Una volta rimosso un annuncio, sar&agrave; <b>impossibile da ripristinare.</b></p>
+
+
+
+
+
+
+

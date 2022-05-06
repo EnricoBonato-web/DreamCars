@@ -1,0 +1,3 @@
+			</select></br>
+			<label for='telaio'>telaio:</label>			
+			<select name='telaio'>
